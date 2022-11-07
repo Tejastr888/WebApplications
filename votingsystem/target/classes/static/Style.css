@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color: #12928d;
+
+}
+
+.showcase {
+    position: relative;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%),url(images/BG.jpg)!important;
+    background-size: cover;
+    background-position: 50%;
+    height: auto;
+    padding: 100px 0px;
+}
+.showcasetext{
+    background-color:rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+}
+
+.showcase h1 {
+    font-size: 40px;
+    color: #fff;
+}
+.showcase p {
+    margin: 20px 0;
+    color: #fff;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1,h2 {
+    font-weight: 300;
+    line-height:1.2;
+    margin: 10px 0;   
+}
+img {
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: #12928d;
+    color: #000 ;
+    height: 80px;
+    padding: 20px 0;
+}
+.container ,.navbar nav{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+/* .navbar .flex{
+    justify-content: space-between;
+} */
+@media (max-width:981px){
+    .phone {
+        display: none;
+    }
+}
+.headel .flex{
+  justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+}
+.navbar ul {
+    display:flex;
+}
+.navbar a {
+    color: #000;
+    font-weight: 400;
+    padding: 3px;
+    margin: 0 2px;
+}
+.head-bott {
+   background-color: var(--primary-color);
+   padding: 20px 0px;
+   text-align: center;
+}
+.pract h2{
+    text-align: center;
+}
+.blurb {
+ background-color: #fff;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: flex-end;
+ flex: wrap;
+ margin-bottom: 25px;
+}
+.blurb div{   
+    width: 200px;
+    text-align: center;
+    height: 300px;
+    background-color: #dccbad;
+    padding-top: 8em;
+}
+
+.flex2 {
+    display: flex;
+}
+
+.flex2 div{
+    padding: 40px;
+}
+.sec2 {
+    background-color: navy;
+    color: white;
+}
+.sec2 img,.blurb div{
+    border-width: 3px;
+    border-color: rgb(211, 145, 37);
+    border-style: solid;
+}
+.btn:hover{
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+}
+.btn {
+    width: fit-content;
+    background-color: #DCCBAD;
+    padding: 10px 15px;
+    margin: auto;
+}
+
+@media (max-width:981px) {
+    .fl-desktop{
+        display: none;
+    }
+}
+
+@media (min-width:981px) {
+    .fl-mobile{
+        display: none;
+    }
+}
+
+.fl-mobile {
+    position: sticky;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 99;
+    line-height: 2em;
+    height: 45px;
+    overflow: hidden;
+}
+.fl-mobile div{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#fl-mobile {
+    width: 33.3%;
+    float: left;
+    height: 57px;
+}
+#fl-mobile .email {
+    background-color: #dccbad;
+    padding: 5px 2em;
+}
+#fl-mobile .menu {
+    padding: 5px 2em;
+}
+
+#fl-mobile .call {
+    padding: 5px 2em;
+  
+}
+
+
+#fl-mobile .menu::before{
+    content: 'a';
+    position: relative;
+    cursor: pointer;
+}
+.img3 {
+    width: 50%;
+    background-image: url(images/AdobeStock-288944492-min.jpg);
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 280px 0;
+    display: inline-block;
+}
+.sec3 span{
+    font-size: 40px;
+}
+.sec3{
+    background-color: #dccbad;
+    background-size: cover;
+}
+.sec3 .content{
+    width: 50%;
+    display: inline-block;
+    padding: 15px;
+    
+}
+.blurb div:hover{
+    background-color: #12928d;
+}
+.blurb div:hover{
+    color: #fff;
+}
+@media (max-width:981px) {
+    .img3{
+        display: none;
+    }
+    .img3a{
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        
+    }
+    .sec3{
+        display: grid;
+    }
+    .sec3 .content{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:981px) {
+    .img3a{
+        display: none;
+    }
+}
+#mad{
+    background-color:red;
+}
